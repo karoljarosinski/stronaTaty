@@ -1,0 +1,38 @@
+header {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
+
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(92, 78, 61);
+    position: relative;
+  }
+  p {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(92, 78, 61);
+  }
+}
+
+header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 15rem;
+  opacity: 0.3;
+  background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}

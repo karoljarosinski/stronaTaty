@@ -1,0 +1,12 @@
+@import "src/app/components/content/components/zakres-badan/scss/zakres-badan";
+@import "src/app/components/content/components/kontakt/scss/kontakt";
+
+.main {
+background-color: seashell;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
