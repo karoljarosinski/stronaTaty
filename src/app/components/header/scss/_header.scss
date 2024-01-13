@@ -1,11 +1,19 @@
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
 header {
-  height: 15rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  box-sizing: border-box;
+  @media (max-width: 610px) {
+    text-align: center;
+  }
 
   h1 {
     font-family: 'Libre Baskerville', serif;

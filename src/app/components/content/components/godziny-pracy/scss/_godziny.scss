@@ -1,0 +1,59 @@
+.godziny {
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  @media (max-width: 820px) {
+    flex-direction: column;
+  }
+
+  .godziny-content {
+    width: 100%;
+    background-color: rgb(229, 224, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1rem 1rem 0;
+    @media (max-width: 820px) {
+      border-radius: 0 0 1rem 1rem;
+    }
+    .details {
+      font-family: 'Libre Baskerville', serif;
+      p:nth-child(1) {
+        font-weight: 400;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+      p:nth-child(2) {
+       margin-bottom: 1.5rem;
+      }
+      p:nth-child(3) {
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      @media (max-width: 820px) {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    height: 25rem;
+    width: 20%;
+    position: relative;
+    background-image: url("../../../../../assets/images/dune-2_1914ec48.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 1rem 0 0 1rem;
+    @media (max-width: 820px) {
+      height: 10rem;
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+}
