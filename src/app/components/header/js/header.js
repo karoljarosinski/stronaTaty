@@ -2,7 +2,6 @@ import React from 'react';
 import { loadCSS } from 'fg-loadcss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
-import Icon from '@mui/material/Icon';
 import MdPhone from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import Chip from '@mui/material/Chip';
