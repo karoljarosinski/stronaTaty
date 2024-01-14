@@ -1,6 +1,6 @@
 import React from 'react';
 import ZakresBadan from "../components/zakres-badan/js/zakres-badan";
-import Kontakt from "../components/kontakt/js/kontakt";
+import Mapa from "../components/kontakt/js/mapa";
 import GodzinyPracy from "../components/godziny-pracy/js/godziny-pracy";
 
 const Content = () => {
@@ -8,7 +8,7 @@ const Content = () => {
     <main className={'main'}>
       <ZakresBadan></ZakresBadan>
       <GodzinyPracy></GodzinyPracy>
-      <Kontakt></Kontakt>
+      <Mapa></Mapa>
     </main>
   );
 };

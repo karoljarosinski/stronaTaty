@@ -10,6 +10,7 @@
     width: 100%;
     background-color: $card-background-color;
     @include display-flex(center, center);
+    flex-direction: column;
     border-radius: 1rem 0 0 1rem;
     @media (max-width: 820px) {
       border-radius: 0 0 1rem 1rem;
@@ -45,5 +46,69 @@
         @include display-flex(center, center);
       }
     }
+
+    .dane {
+      display: flex;
+      padding-left: 3rem;
+      @media (max-width: 820px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        gap: 2rem;
+      }
+    }
+
+    .adress,
+    .numer-kontaktowy {
+      display: flex;
+      margin: 1rem;
+      width: 50%;
+      @media (max-width: 820px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    h4 {
+      font-family: $libre-baskerville-font;
+      font-weight: $font-weight-normal;
+      font-size: 2.5rem;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h5 {
+      font-family: $libre-baskerville-font;
+      font-weight: $font-weight-normal;
+      font-size: 1.25rem;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+
+      &.position {
+        width: 3rem;
+        height: 2.25rem;
+        border-radius: 0.6rem;
+        border: 1px solid black;
+        font-size: 1.5rem;
+        background-color: $position-background;
+        margin-right: 2rem;
+        @include display-flex(center, center);
+      }
+    }
+
+    strong {
+      font-size: 1.25rem;
+      font-family: $libre-baskerville-font;
+      font-weight: $font-weight-bold;
+    }
+
+
+    .dane-kontaktowe {
+      width: 100%;
+    }
+
   }
 }
