@@ -37,7 +37,7 @@ const Header = () => {
       <section className="contact">
         <Stack direction="row" spacing={2}>
           <ThemeProvider theme={theme}>
-            <a href="tel:+48661822351">
+            <a href="tel:+48693527468">
               <Chip icon={<MdPhone/>} label="+48 693-527-468"/>
             </a>
             <a href="mailto:miroslaw.jarosinski@gmail.com">
