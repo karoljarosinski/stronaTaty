@@ -2,6 +2,8 @@
 @import "src/app/scss/mixins/mixins";
 
 .contact{
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
@@ -9,10 +11,8 @@
   @media(max-width: 820px) {
     & > div {
       flex-direction: column;
+      align-items: flex-end;
       gap: 1rem;
-    }
-    & div > div:nth-child(2){
-      margin-left: 0;
     }
   }
 }
@@ -39,6 +39,7 @@ header {
 }
 
 header:before {
+  //z-index: 1;
   content: '';
   display: block;
   position: absolute;

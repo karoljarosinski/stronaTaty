@@ -37,8 +37,12 @@ const Header = () => {
       <section className="contact">
         <Stack direction="row" spacing={2}>
           <ThemeProvider theme={theme}>
-            <Chip icon={<MdPhone />} label="+48 693-527-468" />
-            <Chip icon={<MailIcon />} label="miroslaw.jarosinski@gmail.com" />
+            <a href="tel:+48661822351">
+              <Chip icon={<MdPhone/>} label="+48 693-527-468"/>
+            </a>
+            <a href="mailto:miroslaw.jarosinski@gmail.com">
+              <Chip icon={<MailIcon/>} label="miroslaw.jarosinski@gmail.com"/>
+            </a>
           </ThemeProvider>
         </Stack>
       </section>
@@ -47,7 +51,6 @@ const Header = () => {
         <p>mgr Miroslaw Jarosinski</p>
       </header>
     </>
-
   );
 };
 
