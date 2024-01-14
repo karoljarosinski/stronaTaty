@@ -1,63 +1,49 @@
+@import "src/app/scss/variables/variables";
+@import "src/app/scss/mixins/mixins";
+
 .godziny {
-  width: 90%;
-  display: flex;
   @media (max-width: 820px) {
     flex-direction: column-reverse;
   }
 
   .godziny-content {
     width: 100%;
-    background-color: rgb(229, 224, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $card-background-color;
+    @include display-flex(center, center);
     border-radius: 1rem 0 0 1rem;
     @media (max-width: 820px) {
       border-radius: 0 0 1rem 1rem;
     }
+
     .details {
-      font-family: 'Libre Baskerville', serif;
+      font-family: $libre-baskerville-font;
       width: 100%;
       text-align: center;
+
       p {
         padding: 0.75rem 0;
         font-size: 1.25rem;
+
         &:nth-child(1),
-        &:nth-child(4),{
-          font-weight: 400;
+        &:nth-child(4), {
+          font-weight: map-get($font-weights, "normal");
         }
+
         &:nth-child(3),
-        &:nth-child(5),{
-          font-weight: 700;
+        &:nth-child(5), {
+          font-weight: map-get($font-weights, "bold");
         }
+
         &:nth-child(1) {
           font-size: 3rem;
         }
       }
+
       @media (max-width: 820px) {
         padding: 2rem;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(center, center);
       }
-    }
-  }
-
-  &::after {
-    content: '';
-    height: 25rem;
-    width: 20%;
-    position: relative;
-    background-image: url("../../../../../assets/images/dune-2_1914ec48.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    border-radius: 0 1rem 1rem 0;
-    @media (max-width: 820px) {
-      height: 10rem;
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
     }
   }
 }

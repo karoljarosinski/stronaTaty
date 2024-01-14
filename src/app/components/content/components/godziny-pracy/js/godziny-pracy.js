@@ -6,7 +6,7 @@ const GodzinyPracy = () => {
       <article className="godziny-content">
         <div className="details">
           <p>Godziny pracy</p>
-          <p>Nasza pracownia jest czynna od poniedzialku do piatku w godzinach</p>
+          <p>Od poniedzialku do piatku:</p>
           <p>10:00-16:00</p>
           <p>Soboty:</p>
           <p>Po wczesniejszym kontakcie telefonicznym.</p>

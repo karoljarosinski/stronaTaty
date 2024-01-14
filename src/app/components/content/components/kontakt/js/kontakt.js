@@ -8,21 +8,19 @@ const Kontakt = () => {
       <div className="karta-dane">
         <h4>Kontakt</h4>
         <div className="dane">
-          <div className="adress">
+          <div className="numer-kontaktowy">
             <p className="position">1</p>
             <div>
-              <h5>Adres</h5>
-              <p>Zapraszamy do naszej pracowni, zlokalizowanej przy ulicy</p>
-              <strong>Kosciuszki 40 lok.15</strong>
-              <strong>39-400 Tarnobrzeg</strong>
+              <h5>Numer telefonu</h5>
+              <strong>+48 693-527-468</strong>
             </div>
           </div>
-          <div className="numer-kontaktowy">
+          <div className="adress">
             <p className="position">2</p>
             <div>
-              <h5>Numer Kontaktowy</h5>
-              <p>Skontaktuj sie z nami pod numerem telefonu</p>
-              <strong>+48 693-527-468</strong>
+              <h5>Adres</h5>
+              <strong>ul. Kosciuszki 40 lok.15</strong>
+              <strong>39-400 Tarnobrzeg</strong>
             </div>
           </div>
         </div>

@@ -1,31 +1,20 @@
+@import "src/app/scss/variables/variables";
+@import "src/app/scss/mixins/mixins";
+
 .zakres-badan {
-  background-color: rgb(229, 224, 223);
-  border-radius: 1rem;
-  width: 90%;
-  display: flex;
   @media (max-width: 820px) {
     flex-direction: column;
   }
-  &::before {
-    content: '';
-    height: auto;
-    width: 20%;
-    position: relative;
-    background-image: url("../../../../../assets/images/dune-2_1914ec48.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    border-radius: 1rem 0 0 1rem;
-    @media (max-width: 820px) {
-      height: 10rem;
-      width: 100%;
-      border-radius: 1rem 1rem 0 0;
-    }
-  }
 
   .zakres-badan-content {
+    background-color: $card-background-color;
     width: 80%;
-    padding: 2rem;
+    padding: 2rem 0;
+    border-radius: 0 1rem 1rem 0;
+    @media (max-width: 820px) {
+      width: 100%;
+      border-radius: 0 0 1rem 1rem;
+    }
 
     .zakres-badan-title {
       text-align: center;
@@ -38,9 +27,7 @@
 
       article {
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-flex(center, center);
         flex-direction: column;
         padding-bottom: 3rem;
         &.instruktorzy {
@@ -85,23 +72,23 @@
     }
   }
 
+  h2,
+  h3,
+  h4 {
+    font-family: $libre-baskerville-font;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+
   h2 {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
     font-size: 3rem;
   }
 
   h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 1rem 0;
+    font-weight: map-get($font-weights, "normal");
   }
 
   h4 {
-    padding: 1rem 0;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1.5rem;
     text-align: center;
   }
   ul {

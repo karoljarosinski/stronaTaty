@@ -1,17 +1,29 @@
 @import "src/app/components/content/components/zakres-badan/scss/zakres-badan";
 @import "src/app/components/content/components/kontakt/scss/kontakt";
 @import "src/app/components/content/components/godziny-pracy/scss/godziny";
+@import "src/app/scss/mixins/mixins";
 
 .main {
-background-color: seashell;
-  display: flex;
+  background-color: seashell;
+  @include display-flex(center, center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  //padding: 2rem;
   padding-top: 1rem;
   flex-wrap: wrap;
+
   section {
     margin: 1rem 0;
+    width: 90%;
+    display: flex;
+  }
+
+  .godziny::after {
+    @include set-pseudo-element(25rem, 0 1rem 1rem 0);
+    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+  }
+
+  .kontakt::before,
+  .zakres-badan::before {
+    @include set-pseudo-element(auto, 1rem 0 0 1rem);
+    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
   }
 }

@@ -1,0 +1,11 @@
+@use "sass:map";
+
+$libre-baskerville-font: 'Libre Baskerville', serif;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$card-background-color: rgb(229, 224, 223);
+$position-background: rgb(247, 237, 212);
+$font-weights: (
+        "bold": 700,
+        "normal": 400
+)
