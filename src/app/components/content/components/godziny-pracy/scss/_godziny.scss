@@ -1,9 +1,8 @@
 .godziny {
   width: 90%;
-  margin-top: 2rem;
   display: flex;
   @media (max-width: 820px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .godziny-content {
@@ -12,23 +11,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem 0 0 1rem;
     @media (max-width: 820px) {
       border-radius: 0 0 1rem 1rem;
     }
     .details {
       font-family: 'Libre Baskerville', serif;
-      p:nth-child(1) {
-        font-weight: 400;
-        font-size: 3rem;
-        margin-bottom: 1.5rem;
-      }
-      p:nth-child(2) {
-       margin-bottom: 1.5rem;
-      }
-      p:nth-child(3) {
-        font-weight: 700;
+      width: 100%;
+      text-align: center;
+      p {
+        padding: 0.75rem 0;
         font-size: 1.25rem;
+        &:nth-child(1),
+        &:nth-child(4),{
+          font-weight: 400;
+        }
+        &:nth-child(3),
+        &:nth-child(5),{
+          font-weight: 700;
+        }
+        &:nth-child(1) {
+          font-size: 3rem;
+        }
       }
       @media (max-width: 820px) {
         padding: 2rem;
@@ -40,7 +44,7 @@
     }
   }
 
-  &::before {
+  &::after {
     content: '';
     height: 25rem;
     width: 20%;
@@ -49,7 +53,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0 1rem 1rem 0;
     @media (max-width: 820px) {
       height: 10rem;
       width: 100%;

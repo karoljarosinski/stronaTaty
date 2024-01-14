@@ -8,6 +8,10 @@ background-color: seashell;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  //padding: 2rem;
+  padding-top: 1rem;
   flex-wrap: wrap;
+  section {
+    margin: 1rem 0;
+  }
 }

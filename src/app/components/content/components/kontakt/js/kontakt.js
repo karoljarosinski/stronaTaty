@@ -1,4 +1,6 @@
 import React from 'react';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const Kontakt = () => {
   return (
@@ -24,8 +26,21 @@ const Kontakt = () => {
             </div>
           </div>
         </div>
+        <div className="mapa">
+          <div>
+            <p className="position">3</p>
+            <h5>Mapa</h5>
+          </div>
+          <div className="pictures">
+            <Zoom>
+              <img src={require("../../../../../assets/images/map.png")} alt="mapa dojazdu" className="mapa-dojazdu"/>
+            </Zoom>
+            <Zoom>
+              <img src={require("../../../../../assets/images/entrance.png")} alt="mapa dojazdu" className="wejscie"/>
+            </Zoom>
+          </div>
+        </div>
       </div>
-      <div className="obrazek-karty"></div>
     </section>
   );
 };

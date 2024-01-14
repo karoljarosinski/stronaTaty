@@ -8,6 +8,8 @@ const GodzinyPracy = () => {
           <p>Godziny pracy</p>
           <p>Nasza pracownia jest czynna od poniedzialku do piatku w godzinach</p>
           <p>10:00-16:00</p>
+          <p>Soboty:</p>
+          <p>Po wczesniejszym kontakcie telefonicznym.</p>
         </div>
       </article>
     </section>

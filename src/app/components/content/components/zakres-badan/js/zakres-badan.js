@@ -3,7 +3,6 @@ import React from 'react';
 const ZakresBadan = () => {
   return (
     <section className="zakres-badan">
-      <div className="obrazek-karty"></div>
       <div className="zakres-badan-content">
         <div className="zakres-badan-title">
           <h2>Zakres badan</h2>

@@ -7,8 +7,8 @@ const Content = () => {
   return (
     <main className={'main'}>
       <ZakresBadan></ZakresBadan>
-      <Kontakt></Kontakt>
       <GodzinyPracy></GodzinyPracy>
+      <Kontakt></Kontakt>
     </main>
   );
 };

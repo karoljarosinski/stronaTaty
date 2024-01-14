@@ -3,12 +3,12 @@
   width: 90%;
   justify-content: center;
   @media (max-width: 820px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .karta-dane {
     background-color: rgb(229, 224, 223);
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0 1rem 1rem 0;
     @media (max-width: 820px) {
       border-radius: 0 0 1rem 1rem;
     }
@@ -52,16 +52,59 @@
     }
   }
 
-  &::after {
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+
+    & > div:first-of-type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      @media (max-width: 820px) {
+        justify-content: flex-start;
+      }
+
+      & h5 {
+        padding-bottom: 0;
+      }
+    }
+
+    img {
+      &.mapa-dojazdu {
+        width: 30rem;
+        @media (max-width: 360px) {
+          width: 15rem;
+        }
+      }
+      &.wejscie {
+        width: 15rem;
+        @media (max-width: 360px) {
+          width: 10rem;
+        }
+      }
+    }
+    .pictures {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &::before {
     content: '';
-    height: 30rem;
+    height: auto;
     width: 20%;
     position: relative;
     background-image: url("../../../../../assets/images/dune-2_1914ec48.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 1rem 0 0 1rem;
     @media (max-width: 820px) {
       height: 10rem;
       width: 100%;
@@ -83,12 +126,12 @@
     padding-bottom: 2rem;
   }
 
-  .position {
+  p.position {
     width: 3rem;
     height: 2.25rem;
     border-radius: 0.6rem;
     border: 1px solid black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: rgb(247, 237, 212);
     margin-right: 2rem;
     display: flex;
