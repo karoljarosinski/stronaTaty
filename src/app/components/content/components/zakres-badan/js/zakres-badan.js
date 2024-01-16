@@ -5,7 +5,7 @@ const ZakresBadan = () => {
     <section className="zakres-badan">
       <div className="zakres-badan-content">
         <div className="zakres-badan-title">
-          <h2>Zakres badan</h2>
+          <h2>Zakres dzialalnosci</h2>
           <h3>Badania psychologiczne</h3>
         </div>
         <div className="oferta">

@@ -4,13 +4,27 @@
 @import "src/app/scss/mixins/mixins";
 
 .main {
-  background-color: seashell;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   @include display-flex(center, center);
   flex-direction: column;
   padding-top: 1rem;
-  flex-wrap: wrap;
 
   section {
+    z-index: 2;
     margin: 1rem 0;
     width: 80%;
     display: flex;

@@ -2,6 +2,9 @@
 @import "src/app/scss/mixins/mixins";
 
 .godziny {
+  color: $text-color;
+  font-family: $roboto-slab;
+  font-weight: map-get($font-weights, "normal");
   @media (max-width: 820px) {
     flex-direction: column-reverse;
   }
@@ -17,18 +20,13 @@
     }
 
     .details {
-      font-family: $libre-baskerville-font;
       width: 100%;
       text-align: center;
 
       p {
         padding: 0.75rem 0;
         font-size: 1.25rem;
-
-        &:nth-child(1),
-        &:nth-child(4), {
-          font-weight: map-get($font-weights, "normal");
-        }
+        font-family: $roboto;
 
         &:nth-child(3),
         &:nth-child(5), {
@@ -70,16 +68,15 @@
     }
 
     h4 {
-      font-family: $libre-baskerville-font;
-      font-weight: $font-weight-normal;
+      font-weight: map-get($font-weights, "bold");
       font-size: 2.5rem;
       padding: 2rem;
       text-align: center;
     }
 
     h5 {
-      font-family: $libre-baskerville-font;
-      font-weight: $font-weight-normal;
+      font-family: $roboto-slab;
+      font-weight: map-get($font-weights, "normal");
       font-size: 1.25rem;
       padding-bottom: 1rem;
     }
@@ -91,7 +88,6 @@
         width: 3rem;
         height: 2.25rem;
         border-radius: 0.6rem;
-        border: 1px solid black;
         font-size: 1.5rem;
         background-color: $position-background;
         margin-right: 2rem;
@@ -101,8 +97,8 @@
 
     strong {
       font-size: 1.25rem;
-      font-family: $libre-baskerville-font;
-      font-weight: $font-weight-bold;
+      font-family: $roboto-slab;
+      font-weight: map-get($font-weights, "bold");
     }
 
 

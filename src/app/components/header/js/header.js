@@ -47,8 +47,10 @@ const Header = () => {
         </Stack>
       </section>
       <header>
-        <h1 className="title">Pracownia Uslug Psychologicznych</h1>
-        <p>mgr Miroslaw Jarosinski</p>
+        <div>
+          <p>Pracownia Uslug Psychologicznych</p>
+          <p>mgr Miroslaw Jarosinski</p>
+        </div>
       </header>
     </>
   );
