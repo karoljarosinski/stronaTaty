@@ -6,10 +6,10 @@ const GodzinyPracy = () => {
       <article className="godziny-content">
         <div className="details">
           <h4>Godziny pracy</h4>
-          <p>Od poniedzialku do piatku:</p>
+          <p>Od poniedziałku do piątku:</p>
           <p>10:00-16:00</p>
           <p>Soboty:</p>
-          <p>Po wczesniejszym kontakcie telefonicznym.</p>
+          <p>Po wcześniejszym uzgodnieniu telefonicznym.</p>
         </div>
         <div className="dane-kontaktowe">
           <h4>Kontakt</h4>
@@ -25,8 +25,12 @@ const GodzinyPracy = () => {
               <p className="position">2</p>
               <div>
                 <h5>Adres</h5>
-                <p><strong>ul. Kosciuszki 40 lok.15</strong></p>
-                <p><strong>39-400 Tarnobrzeg</strong></p>
+                <p>
+                  <strong>ul. Kościuszki 40 lok.15</strong>
+                </p>
+                <p>
+                  <strong>39-400 Tarnobrzeg</strong>
+                </p>
               </div>
             </div>
           </div>

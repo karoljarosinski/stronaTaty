@@ -1,5 +1,5 @@
-@import "src/app/scss/variables/variables";
-@import "src/app/scss/mixins/mixins";
+@import 'src/app/scss/variables/variables';
+@import 'src/app/scss/mixins/mixins';
 
 .zakres-badan {
   color: $text-color;
@@ -11,7 +11,7 @@
   .zakres-badan-content {
     background-color: $card-background-color;
     width: 80%;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     border-radius: 0 1rem 1rem 0;
     @media (max-width: 820px) {
       width: 100%;
@@ -35,7 +35,7 @@
         &.instruktorzy {
           align-self: flex-start;
         }
-        &.bron {
+        &.inne-zawody {
           width: 100%;
         }
         @media (max-width: 820px) {
@@ -57,19 +57,19 @@
         background-size: cover;
       }
       .samochod {
-        background-image: url("../../../../../assets/images/samochod.jpg");
+        background-image: url('../../../../../assets/images/samochod.jpg');
       }
       .elki {
-        background-image: url("../../../../../assets/images/elki.jpg");
+        background-image: url('../../../../../assets/images/elki.jpg');
       }
       .koparka {
-        background-image: url("../../../../../assets/images/koparka.jpg");
+        background-image: url('../../../../../assets/images/koparka.jpg');
       }
       .inne {
-        background-image: url("../../../../../assets/images/inne-zawody.jpg");
+        background-image: url('../../../../../assets/images/inne-zawody.jpg');
       }
       .obraz-bron {
-        background-image: url("../../../../../assets/images/bron.jpg");
+        background-image: url('../../../../../assets/images/bron.jpg');
       }
     }
   }
@@ -83,12 +83,13 @@
 
   h2 {
     font-size: 3rem;
-    font-weight: map-get($font-weights, "normal");
+    font-weight: map-get($font-weights, 'normal');
     text-shadow: $text-shadow;
   }
 
   h3 {
-    font-weight: map-get($font-weights, "normal");
+    font-weight: map-get($font-weights, 'normal');
+    font-size: 2rem;
   }
 
   h4 {
