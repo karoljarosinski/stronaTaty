@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 
 const Article = ({ article_class, image_class, text, children }) => {
   return (
