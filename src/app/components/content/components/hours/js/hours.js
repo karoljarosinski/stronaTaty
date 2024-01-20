@@ -1,9 +1,9 @@
 import React from 'react';
 
-const GodzinyPracy = () => {
+const WorkingHours = () => {
   return (
-    <section className="godziny">
-      <article className="godziny-content">
+    <section className="hours">
+      <article className="hours-content">
         <div className="details">
           <h4>Godziny pracy</h4>
           <p>Od poniedziałku do piątku:</p>
@@ -11,10 +11,10 @@ const GodzinyPracy = () => {
           <p>Soboty:</p>
           <p>Po wcześniejszym uzgodnieniu telefonicznym.</p>
         </div>
-        <div className="dane-kontaktowe">
+        <div className="contact-details">
           <h4>Kontakt</h4>
-          <div className="dane">
-            <div className="numer-kontaktowy">
+          <div className="contact-data">
+            <div className="phone-number">
               <p className="position">1</p>
               <div>
                 <h5>Numer telefonu</h5>
@@ -40,4 +40,4 @@ const GodzinyPracy = () => {
   );
 };
 
-export default GodzinyPracy;
+export default WorkingHours;

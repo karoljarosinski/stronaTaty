@@ -1,7 +1,7 @@
-@import "src/app/components/content/components/zakres-badan/scss/zakres-badan";
-@import "src/app/components/content/components/kontakt/scss/kontakt";
-@import "src/app/components/content/components/godziny-pracy/scss/godziny";
-@import "src/app/scss/mixins/mixins";
+@import 'src/app/components/content/components/scope/scss/scope';
+@import 'src/app/components/content/components/map/scss/map';
+@import 'src/app/components/content/components/hours/scss/hours';
+@import 'src/app/scss/mixins/mixins';
 
 .main {
   position: relative;
@@ -15,7 +15,7 @@
     left: 0;
     top: 0;
     display: block;
-    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+    background-image: url('../../../../app/assets/images/dune-2_1914ec48.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -30,14 +30,14 @@
     display: flex;
   }
 
-  .godziny::after {
+  .hours::after {
     @include set-pseudo-element(auto, 0 1rem 1rem 0);
-    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+    background-image: url('../../../../app/assets/images/dune-2_1914ec48.jpg');
   }
 
-  .location::before,
-  .zakres-badan::before {
+  .location-details::before,
+  .scope::before {
     @include set-pseudo-element(auto, 1rem 0 0 1rem);
-    background-image: url("../../../../app/assets/images/dune-2_1914ec48.jpg");
+    background-image: url('../../../../app/assets/images/dune-2_1914ec48.jpg');
   }
 }

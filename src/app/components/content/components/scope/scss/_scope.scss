@@ -1,14 +1,15 @@
 @import 'src/app/scss/variables/variables';
 @import 'src/app/scss/mixins/mixins';
+@import '../../articles/scss/_article';
 
-.zakres-badan {
+.scope {
   color: $text-color;
   font-family: $roboto-slab;
   @media (max-width: 820px) {
     flex-direction: column;
   }
 
-  .zakres-badan-content {
+  .scope-content {
     background-color: $card-background-color;
     width: 80%;
     padding: 2rem 0;
@@ -18,12 +19,12 @@
       border-radius: 0 0 1rem 1rem;
     }
 
-    .zakres-badan-title {
+    .scope-title {
       text-align: center;
       padding-bottom: 2rem;
     }
 
-    .oferta {
+    .offer {
       display: flex;
       flex-wrap: wrap;
 
@@ -32,10 +33,10 @@
         @include display-flex(center, center);
         flex-direction: column;
         padding-bottom: 3rem;
-        &.instruktorzy {
+        &.driving-instructor {
           align-self: flex-start;
         }
-        &.inne-zawody {
+        &.other-jobs {
           width: 100%;
         }
         @media (max-width: 820px) {
@@ -48,28 +49,20 @@
         flex-direction: column;
         align-items: center;
       }
-
-      .image {
-        height: 15rem;
-        width: 15rem;
-        background-position: center center;
-        border-radius: 50%;
-        background-size: cover;
+      .car {
+        background-image: url('../../../../../assets/images/car.jpg');
       }
-      .samochod {
-        background-image: url('../../../../../assets/images/samochod.jpg');
+      .driving-car {
+        background-image: url('../../../../../assets/images/driving-car.jpg');
       }
-      .elki {
-        background-image: url('../../../../../assets/images/elki.jpg');
+      .excavator {
+        background-image: url('../../../../../assets/images/excavator.jpg');
       }
-      .koparka {
-        background-image: url('../../../../../assets/images/koparka.jpg');
+      .other {
+        background-image: url('../../../../../assets/images/other-jobs.jpg');
       }
-      .inne {
-        background-image: url('../../../../../assets/images/inne-zawody.jpg');
-      }
-      .obraz-bron {
-        background-image: url('../../../../../assets/images/bron.jpg');
+      .pistol-picture {
+        background-image: url('../../../../../assets/images/gun.jpg');
       }
     }
   }

@@ -1,13 +1,12 @@
 import './scss/App.scss';
-import Header from "./components/header/js/header";
-import Content from "./components/content/js/content";
+import Header from './components/header/js/header';
+import Content from './components/content/js/content';
 
 function App() {
   return (
     <>
       <Header></Header>
       <Content></Content>
-      {/*<Footer></Footer>*/}
     </>
   );
 }
