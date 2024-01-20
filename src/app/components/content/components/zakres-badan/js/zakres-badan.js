@@ -1,4 +1,5 @@
 import React from 'react';
+import Article from '../../articles/js/article';
 
 const ZakresBadan = () => {
   return (
@@ -9,30 +10,36 @@ const ZakresBadan = () => {
           <h3>Badania psychologiczne</h3>
         </div>
         <div className="oferta">
-          <article className="kierowcy">
-            <div className="samochod image"></div>
-            <h4>Kierowców</h4>
+          <Article
+            article_class={'kierowcy'}
+            image_class={'samochod'}
+            text={'Kierowców'}
+          >
             <ul>
               <li>zawodowych</li>
               <li>skierowanych przez Starostę</li>
             </ul>
-          </article>
-          <article className="instruktorzy">
-            <div className="elki image"></div>
-            <h4>Instruktorów nauki jazdy i egzaminatorow</h4>
-          </article>
-          <article className="koparki">
-            <div className="koparka image"></div>
-            <h4>Operatorów maszyn w ramach medycyny pracy</h4>
-          </article>
-          <article className="bron">
-            <div className="obraz-bron image"></div>
-            <h4>Pozwolenia na broń</h4>
-          </article>
-          <article className="inne-zawody">
-            <div className="inne image"></div>
-            <h4>Pomoc i wsparcie psychologiczne</h4>
-          </article>
+          </Article>
+          <Article
+            article_class={'instruktorzy'}
+            image_class={'elki'}
+            text={'Instruktorów nauki jazdy i egzaminatorow'}
+          ></Article>
+          <Article
+            article_class={'koparki'}
+            image_class={'koparka'}
+            text={'Operatorów maszyn w ramach medycyny pracy'}
+          ></Article>
+          <Article
+            article_class={'bron'}
+            image_class={'obraz-bron'}
+            text={'Pozwolenia na broń'}
+          ></Article>
+          <Article
+            article_class={'inne-zawody'}
+            image_class={'inne'}
+            text={'Pomoc i wsparcie psychologiczne'}
+          ></Article>
         </div>
       </div>
     </section>
