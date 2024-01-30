@@ -23,7 +23,7 @@ const Scope = () => {
           <Article
             article_class={'driving-instructor'}
             image_class={'driving-car'}
-            text={'Instruktorów nauki jazdy i egzaminatorow'}
+            text={'Instruktorów nauki jazdy i egzaminatorów'}
           ></Article>
           <Article
             article_class={'machines'}
